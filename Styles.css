@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px; /* Add padding for small screens */
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Default width for small screens */
+    max-width: 400px; /* Limit the width for larger screens */
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px; /* Increase padding for better touch experience */
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 15px 20px; /* Increase button size for easier tapping */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Full-width button on small screens */
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p#message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+}
+
+/* Media Query for larger screens */
+@media (min-width: 600px) {
+    .container {
+        width: 400px; /* Fixed width for larger screens */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        width: auto; /* Button does not need to be full-width on larger screens */
+    }
+}
